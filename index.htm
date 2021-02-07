@@ -42,7 +42,7 @@
             <section class="moto-section">
                 <div class="moto-container">
                     <h1>Эффективные решения для вашего бизнеса</h1>
-                    <a href="#" class="button">Заказать услугу</a>
+                    <button class="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
             <!--HERO-->
@@ -291,5 +291,15 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-button" data-modal-close>
+                    <svg class="modal-close-button-icon">
+                        <use href="./images/sprite_logo.svg#icon-close-black"><use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
