@@ -79,20 +79,17 @@ a.logo {
   left: 0;
   bottom: 0;
 } */
-.layer:current::after{
-  content: ""; 
+.main-menu a.current::after{
+  content: "";
   width: 100%;
   height: 4px;
   background-color: #2196F3;
   background-size: contain;
   background-position: bottom;
-  margin-top: 28px; 
-  align-self: flex-end;
+  margin-top: 35px;
   border-radius: 15%;
   display: block;
   position: absolute;
-  left: 0;
-  bottom: 0;
 } 
 .header-address {
   align-items: center;
@@ -488,6 +485,7 @@ a.logo {
   margin-right: 10px;
   text-align: center;
   border-style: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 button:hover,
 button:focus {
@@ -515,11 +513,17 @@ button:focus {
   border-color: #eeeeee;
   margin-bottom: 30px;
   margin-right: 30px;
+  display: flex;
+  justify-content: center;
 }
-.pictures li:focus,
-.pictures li:hover{
+.pictures a{
+  display: block;
+}
+.pictures a:focus,
+.pictures a:hover{
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .pictures-title{
   padding: 20px;
@@ -538,7 +542,6 @@ button:focus {
 .pictures-wrapper{
   position:relative;
   overflow: hidden;
-  width: 100%;
 }
 .pictures-overlay{
   position: absolute;
